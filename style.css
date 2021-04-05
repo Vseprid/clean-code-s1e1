@@ -37,6 +37,10 @@
   width: 56%;
   display: inline-block;
   flex-grow: 1;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
 }
 
 .section-for-adding__task-wrapper {
@@ -96,6 +100,8 @@ button {
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+  display: none;
+  width: 226px;
 }
 
 .task__input:focus {
@@ -103,13 +109,13 @@ button {
 }
 
 /* New Task */
-
 .section-heading_for-adding {
   display: block;
   margin: 0 0 20px;
 }
 
 .section-for-adding_new-task {
+  display: inline-block;
   width: 318px;
 }
 
@@ -137,16 +143,18 @@ button {
   margin: 0 10px;
 }
 
-.task {
+/* .task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
-}
+} */
 
-.task__input {
+/* .task__input {
+  display: none;
   width: 226px;
-}
+} */
+
 .delete:hover {
   color: #cf2323;
 }
@@ -170,11 +178,11 @@ button {
 
 /* Edit Task */
 
-.list-item input[type="text"] {
+/* .list-item input[type="text"] {
   display: none;
-}
+} */
 
-.edit-mode input[type="text"] {
+.task__input_edit {
   display: inline-block;
   width: 224px;
 }
