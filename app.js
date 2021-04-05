@@ -119,6 +119,7 @@ var deleteTask=function(){
 }
 
 
+
 //Mark task completed
 var taskCompleted=function(){
     console.log("Complete Task...");
@@ -126,6 +127,8 @@ var taskCompleted=function(){
     //Append the task list item to the #compl-tasks
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
+    let complTask = listItem.querySelector('label');
+    complTask.classList.add('compl-task')
     bindTaskEvents(listItem, taskIncomplete);
 
 }
@@ -138,6 +141,8 @@ var taskIncomplete=function(){
     //Append the task list item to the #incomplete-tasks.
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
+    let complTask = listItem.querySelector('label');
+    complTask.classList.remove('compl-task');
     bindTaskEvents(listItem,taskCompleted);
 }
 
