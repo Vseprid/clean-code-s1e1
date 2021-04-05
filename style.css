@@ -74,6 +74,13 @@ button {
 
 /* Heading */
 
+.new-task {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
 .section-heading,
 label[for="new-task"] {
   color: #333;
