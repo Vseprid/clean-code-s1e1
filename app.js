@@ -41,14 +41,16 @@ var createNewTaskElement=function(taskString){
     editInput.className="task";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="edit";
+    editButton.className="button edit";
 
-    deleteButton.className="delete";
+    deleteButton.className="button delete";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.classList.add('delete-img')
     deleteButton.appendChild(deleteButtonImg);
 
 
     //and appending.
+    listItem.classList.add('list-item')
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
     listItem.appendChild(editInput);
@@ -91,9 +93,11 @@ var editTask=function(){
 
         //switch to .edit-mode
         //label becomes the inputs value.
+        label.classList.remove('edit-mode-label');
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
     }else{
+        label.classList.add('edit-mode-label');
         editInput.value=label.innerText;
         editBtn.innerText="Save";
     }
