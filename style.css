@@ -143,18 +143,6 @@ button {
   margin: 0 10px;
 }
 
-/* .task {
-  padding-left: 10px;
-  box-sizing: border-box;
-  font-size: 18px;
-  width: 226px;
-} */
-
-/* .task__input {
-  display: none;
-  width: 226px;
-} */
-
 .delete:hover {
   color: #cf2323;
 }
@@ -177,10 +165,6 @@ button {
 }
 
 /* Edit Task */
-
-/* .list-item input[type="text"] {
-  display: none;
-} */
 
 .task__input_edit {
   display: inline-block;
